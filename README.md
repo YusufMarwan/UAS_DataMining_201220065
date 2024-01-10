@@ -19,7 +19,7 @@ Classifier webapp dibangun dengan menggunakan Streamlit (Python-framework). Tuju
 
 ### For Model-training
 * sklearn.model_selection - train_test_split
-* sklearn.svm - SVC
+* sklearn.naive_bayes - GaussianNB
 
 
 ### Deployment
