@@ -1,4 +1,4 @@
-# **Prediksi Churn Nasabah Bank Menggunakan Machine Learning**
+# **Prediksi Churn Nasabah Bank Menggunakan Naive Bayes**
 
 Classifier webapp dibangun dengan menggunakan Streamlit (Python-framework). Tujuannya untuk mengelompokkan yang mana masih menjadi nasabah aktif atau Tidak berdasarkan parameter inputan. Algoritma yang digunakan adalah Naive Bayes. App ini juga dapat mengenerate visualized report dengan data nasabah bank.
 
