@@ -1,6 +1,6 @@
-# **Prediksi Diabetes Menggunakan Machine Learning**
+# **Prediksi Churn Nasabah Bank Menggunakan Machine Learning**
 
-Classifier webapp dibangun dengan menggunakan Streamlit (Python-framework). Tujuannya untuk mengkategorikan Diabetes atau Tidak berdasarkan parameter inputan. Algoritma yang digunakan adalah SVM. App ini juga dapat mengenerate visualized report dengan data pasien.
+Classifier webapp dibangun dengan menggunakan Streamlit (Python-framework). Tujuannya untuk mengelompokkan yang mana masih menjadi nasabah aktif atau Tidak berdasarkan parameter inputan. Algoritma yang digunakan adalah Naive Bayes. App ini juga dapat mengenerate visualized report dengan data nasabah bank.
 
 
 ## **Technologies Used:**
@@ -19,7 +19,7 @@ Classifier webapp dibangun dengan menggunakan Streamlit (Python-framework). Tuju
 
 ### For Model-training
 * sklearn.model_selection - train_test_split
-* sklearn.svm - SVC
+* sklearn.naive_bayes - GaussianNB
 
 
 ### Deployment
