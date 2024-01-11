@@ -22,7 +22,7 @@ st.title('Aplikasi Bank Customer')
 
 html_layout1 = """
 <br>
-<div style="background-color:red ; padding:2px">
+<div style="background-color:blue ; padding:2px">
 <h2 style="color:white;text-align:center;font-size:35px"><b>Bank Customer Churn</b></h2>
 </div>
 <br>
@@ -31,7 +31,7 @@ html_layout1 = """
 st.markdown(html_layout1,unsafe_allow_html=True)
 activities = ['Naive Bayes','Model Lain']
 option = st.sidebar.selectbox('Pilihan mu ?',activities)
-st.sidebar.header('Data Customer')
+st.sidebar.header('Data Customer Bank')
 
 if st.checkbox("Tentang Dataset"):
     html_layout2 ="""
@@ -79,16 +79,16 @@ if st.checkbox('Train-Test Dataset'):
     st.write(y_test.shape)
 
 def user_report():
-    customer_id = st.sidebar.slider('customer_id',0,20,1)
-    credit_score = st.sidebar.slider('credit_score',0,200,108)
+    customer_id = st.sidebar.slider('customer_id',0,1600000,1)
+    credit_score = st.sidebar.slider('credit_score',0,900,600)
     country = st.sidebar.slider('country',0,4,1)
     gender = st.sidebar.slider('gender',0,2,1)
     age = st.sidebar.slider('age',0,100,59)
-    tenure = st.sidebar.slider('tenure',0,100,25)
-    balance = st.sidebar.slider('balance',0,1000,120)
-    products_number = st.sidebar.slider('products_number',0,80,25)
+    tenure = st.sidebar.slider('tenure',0,15,2)
+    balance = st.sidebar.slider('balance',0,2000,120)
+    products_number = st.sidebar.slider('products_number',0,10,5)
     credit_card = st.sidebar.slider('credit_card', 0.05,2.5,0.45)
-    active_member = st.sidebar.slider('active_member',21,100,24)
+    active_member = st.sidebar.slider('active_member',0,10,1)
     estimated_salary = st.sidebar.slider('estimated_salary',21,100,24)
     
     user_report_data = {
