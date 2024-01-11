@@ -29,7 +29,7 @@ html_layout1 = """
 <br>
 """
 st.markdown(html_layout1,unsafe_allow_html=True)
-activities = ['GaussianNB','Model Lain']
+activities = ['Naive Bayes','Model Lain']
 option = st.sidebar.selectbox('Pilihan mu ?',activities)
 st.sidebar.header('Data Customer')
 
@@ -108,9 +108,9 @@ def user_report():
     report_data = pd.DataFrame(user_report_data,index=[0])
     return report_data
 
-#Data Pelanggan
+#Data Nasabah
 user_data = user_report()
-st.subheader('Data Pelanggan')
+st.subheader('Data Nasabah')
 st.write(user_data)
 
 user_result = naive_bayes.predict(user_data)
@@ -120,9 +120,9 @@ naive_bayes_score = accuracy_score(y_test,naive_bayes.predict(x_test))
 st.subheader('Hasilnya adalah : ')
 output=''
 if user_result[0]==0:
-    output='Kamu masih menjadi anggota aktif'
+    output='Kamu masih menjadi nasabah aktif di bank ini'
 else:
-    output ='Kamu bukan anggota aktif lagi'
+    output ='Kamu sudah berhenti menjadi nasabah bank ini'
 st.title(output)
 st.subheader('Model yang digunakan : \n'+option)
 st.subheader('Accuracy : ')
